@@ -12,8 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WebView mywebView = (WebView) findViewById(R.id.webView1);
-        mywebView.loadUrl("http://www.javatpoint.com/");
+        WebView mywebview = (WebView) findViewById(R.id.webView1);
+        //Load full web
+        mywebview.loadUrl("http://www.javatpoint.com/");
+
+        //Trường hợp lấy xml từ mạng vể rồi load lên.
+        //String data = "<html><body><h1>Hello, Javatpoint!</h1></body></html>";
+        //mywebview.loadData(data, "text/html", "UTF-8");
 
     }
 
